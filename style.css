@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .main {
   margin: 0 auto;
@@ -8,82 +9,114 @@ body {
   height: 800px;
   border-radius: 20%;
   background-color: antiquewhite;
-  position: relative; }
-  .main .horizontal_road {
-    width: 800px;
-    height: 50px;
-    background-color: grey;
-    position: absolute;
-    top: 375px; }
-  .main .vertical_road {
-    width: 50px;
-    height: 800px;
-    background-color: grey;
-    position: absolute;
-    left: 375px; }
-  .main .horizontal_trafficLight {
-    box-sizing: border-box;
-    background-color: brown;
-    width: 80px;
-    height: 40px;
-    border-radius: 10px;
-    position: absolute;
-    left: 260px;
-    top: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center; }
-  .main .vertical_trafficLight {
-    box-sizing: border-box;
-    background-color: brown;
-    width: 40px;
-    height: 80px;
-    border-radius: 10px;
-    position: absolute;
-    right: 300px;
-    top: 260px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; }
-  .main .alarm_button {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: deeppink;
-    position: absolute;
-    bottom: 100px;
-    right: 100px; }
+  position: relative;
+}
+
+.main .horizontal {
+  width: 800px;
+  height: 50px;
+  position: absolute;
+  top: 375px;
+}
+
+.main .vertical {
+  width: 50px;
+  height: 800px;
+  position: absolute;
+  left: 375px;
+}
+
+.main .horizontal_trafficLight {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: brown;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  position: absolute;
+  left: 260px;
+  top: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .vertical_trafficLight {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: brown;
+  width: 40px;
+  height: 80px;
+  border-radius: 10px;
+  position: absolute;
+  right: 300px;
+  top: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .alarm_button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: deeppink;
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+}
+
+.green_road {
+  background-color: green;
+}
+
+.red_road {
+  background-color: red;
+}
 
 .red {
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  background-color: red; }
+  background-color: red;
+}
 
 .red_second {
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  background-color: red; }
+  background-color: red;
+}
 
 .green {
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  background-color: green; }
+  background-color: green;
+}
 
 .green_second {
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  background-color: green; }
-
-.red_road {
-  background-color: red; }
-
-.green_road {
-  background-color: green; }
-
+  background-color: green;
+}
 /*# sourceMappingURL=style.css.map */

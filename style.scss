@@ -12,17 +12,16 @@ body {
   border-radius: 20%;
   background-color: antiquewhite;
   position: relative;
-  .horizontal_road {
+
+  .horizontal {
     width: 800px;
     height: 50px;
-    background-color: grey;
     position: absolute;
     top: 375px;
-  }
-  .vertical_road {
+  } 
+  .vertical {
     width: 50px;
     height: 800px;
-    background-color: grey;
     position: absolute;
     left: 375px;
   }
@@ -64,6 +63,18 @@ body {
     right: 100px;
   }
 }
+.green_road {
+
+  background-color:green;
+
+}
+.red_road {
+
+  background-color: red;
+
+}
+
+
 
 .red {
   height: 30px;
@@ -88,11 +99,5 @@ body {
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  background-color: green;
-}
-.red_road {
-  background-color: red;
-}
-.green_road {
   background-color: green;
 }
