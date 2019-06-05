@@ -103,12 +103,21 @@
 // }
 
 
-#main {
-  background-color: brown;
-  #red {
-    background-color: cornflowerblue;
-    h1 {
-      color:blueviolet;
-    }
-  }
+
+#first{
+  width: 200px;
+  height: 200px;
+  background-color: antiquewhite;
+}
+#second{
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  position: relative;
+}
+#point {
+  width: 2px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
 }

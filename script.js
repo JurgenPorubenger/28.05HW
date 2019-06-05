@@ -56,30 +56,111 @@
 
 // })
 
-let main = document.getElementById('main');
-main.addEventListener("click", function() {
-    // console.log(event.target.tagName);
-})
-let red = document.getElementById('red');
-red.addEventListener("click", function() {
-    console.log("red");
-})
-let p = document.querySelector('p');
-p.addEventListener("click", function() {
-    console.log("P");
-});
-let h = document.querySelector('h1');
-h.addEventListener("click", function() {
-    console.log("H1");
-});
-let u = document.querySelector('ul');
-u.addEventListener("click", function() {
-    console.log("UL");
+// let main = document.getElementById('main');
+// main.addEventListener("click", function() {
+//         console.log(event.target.tagName);
+// })
+// let red = document.getElementById('red');
+// red.addEventListener("click", function() {
+//     // console.log("red");
+// })
+// let p = document.querySelector('p');
+// p.addEventListener("click", function() {
+//     // console.log("P");
+// });
+// let h = document.querySelector('h1');
+// h.addEventListener("click", function() {
+//     // console.log("H1");
+// });
+// let u = document.querySelector('ul');
+// u.addEventListener("click", function() {
+//     // console.log("UL");
+// });
+//
+// let l = document.querySelector("ul>li");
+// l.addEventListener("click",function() {
+//     // console.log("LI");
+// });
+
+// function f(t) {
+//     console.log(t);
+// }
+// function f1(cb,t) {
+//     setTimeout(function () {
+//         cb(t);
+//     }, 1000);
+// }
+// f1(f,"ere");
+
+
+// function f2(a, text) {
+//     console.log(a());
+//     console.log(text);
+// }
+//
+// function f3() {
+//     return "wqq";
+// }
+//
+// f2(f3,"jjjjj");
+
+// function f2(a) {
+//     console.log(Math.pow(a,a));
+//     console.log(a*a*a);
+// }
+// function f3(a) {
+//     console.log(a*a);
+// }
+// f2(3);
+// f3(4);
+
+
+// function display(cb) {
+//     cb();
+// }
+// display(function () {
+//     console.log("ananistus");
+// });
+
+// (function f() {
+//      console.log("dwdwd")
+//  })();
+
+// let h = document.querySelector('h1');
+// let p = document.querySelector('p');
+// p.addEventListener("click", red);
+// h.addEventListener("mouseover", function () {
+//     event.target.style.fontSize=60+"px"
+// });
+
+
+// function red(e) {
+//     e.target.style.color="red";
+//     e.target.style.border="solid";
+//     e.target.style.backgroundColor="yellow";
+// }
+
+ // document.querySelector('#first').onmousemove =function(event) {
+ //     let X = event.offsetX;
+ //     let Y = event.offsetY;
+ //     document.querySelector('#second').o;
+ //     document.querySelector('#second').event.offsetY=Y;
+ //    // console.log(X);
+ // }
+
+let first = document.querySelector('#first');
+let point = document.querySelector('#point');
+first.addEventListener("mousemove", function () {
+    let X=event.offsetX;
+    let Y=event.offsetY;
+    point.style.left=X+'px';
+    point.style.top=Y+'px';
 });
 
-let l = document.querySelector("ul>li");
-l.addEventListener("click",function() {
-    console.log("LI");
-});
+
+
+
+
+
 
 
