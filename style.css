@@ -1,12 +1,18 @@
-#main {
-  background-color: brown;
-}
+#first {
+  width: 200px;
+  height: 200px;
+  background-color: antiquewhite; }
 
-#main #red {
-  background-color: cornflowerblue;
-}
+#second {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  position: relative; }
 
-#main #red h1 {
-  color: blueviolet;
-}
+#point {
+  width: 2px;
+  height: 2px;
+  background-color: black;
+  position: absolute; }
+
 /*# sourceMappingURL=style.css.map */
