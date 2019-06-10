@@ -1,18 +1,14 @@
-#first {
-  width: 200px;
-  height: 200px;
-  background-color: antiquewhite; }
-
-#second {
-  width: 200px;
-  height: 200px;
-  background-color: aquamarine;
-  position: relative; }
-
-#point {
-  width: 2px;
-  height: 2px;
-  background-color: black;
-  position: absolute; }
+#main {
+  display: flex;
+  flex-direction: row; }
+  #main #first {
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite; }
+  #main #point {
+    width: 30px;
+    height: 30px;
+    background-color: brown;
+    position: absolute; }
 
 /*# sourceMappingURL=style.css.map */

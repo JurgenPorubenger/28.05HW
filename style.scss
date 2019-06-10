@@ -103,21 +103,36 @@
 // }
 
 
-
-#first{
-  width: 200px;
-  height: 200px;
-  background-color: antiquewhite;
-}
-#second{
-  width: 200px;
-  height: 200px;
-  background-color: aquamarine;
-  position: relative;
-}
-#point {
-  width: 2px;
-  height: 2px;
-  background-color: black;
-  position: absolute;
+#main {
+  display: flex;
+  flex-direction: row;
+  #first{
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+  }
+  //#second{
+  //  width: 200px;
+  //  height: 200px;
+  //  background-color: aquamarine;
+  //  position: relative;
+  //}
+  //#third{
+  //  width: 200px;
+  //  height: 200px;
+  //  background-color:darkkhaki;
+  //  position: relative;
+  //}
+  #point {
+    width: 30px;
+    height: 30px;
+    background-color: brown;
+    position: absolute;
+  }
+  //#point2 {
+  //  width: 2px;
+  //  height: 2px;
+  //  background-color: black;
+  //  position: absolute;
+  //}
 }

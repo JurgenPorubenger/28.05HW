@@ -147,20 +147,79 @@
  //     document.querySelector('#second').event.offsetY=Y;
  //    // console.log(X);
  // }
+//
+// let first = document.querySelector('#first');
+// let point = document.querySelector('#point');
+// first.addEventListener("mousemove", function () {
+//     let X=event.offsetX;
+//     let Y=event.offsetY;
+//     if (Y>5&&Y<195) {
+//         if (X>5&&X<195) {
+//             point.style.top=Y+'px';
+//             point.style.left=X+'px';
+//             point2.style.bottom=Y+'px';
+//             point2.style.right=X+'px';
+//     }
+//     }
+// });
+
+// for (let i=0; i<10; i++) {
+//     setTimeout(function aw(q) {
+//         return ap(i);
+//     }, 1000);
+//
+//     function ap(qqq) {
+//         setTimeout(function() {
+//             console.log(i);
+//         }, 1000)
+//     }
+// }
+
+
+// for (let i=0; i<10; i++) {
+//     let time = i == 0?1000:1000*(i+1);
+//     setTimeout(function () {
+//         console.log(time);
+//     }, time);
+// }
+
+// let a = 5;
+// setInterval(function () {
+//     if (a===5) {
+//         console.log(a);
+//     }else {clearInterval()}
+// }, 1000);
+// setTimeout(function () {
+//     a=6;
+// }, 5000);
+
 
 let first = document.querySelector('#first');
+
+
 let point = document.querySelector('#point');
-first.addEventListener("mousemove", function () {
-    let X=event.offsetX;
-    let Y=event.offsetY;
-    point.style.left=X+'px';
-    point.style.top=Y+'px';
+point.addEventListener("mousedown", function () {
+   if (event.which === 1) {
+       let rect = point.getBoundingClientRect();
+       let X = first.event.offsetX;
+       let Y = first.event.offsetY;
+       console.log(X);
+       console.log(Y);
+       // rect.top.x==X;
+       // rect.top.y==Y;
+
+       // console.log(X);
+    }
+
+    // if (Y > 5 && Y < 195) {
+    //     if (X > 5 && X < 195) {
+    //         point.style.top = Y + 'px';
+    //         point.style.left = X + 'px';
+    //         point2.style.bottom = Y + 'px';
+    //         point2.style.right = X + 'px';
+    //     }
+    // }
 });
-
-
-
-
-
-
-
-
+point.addEventListener("mouseup", function () {
+    if (event.which === 1) {}
+})
