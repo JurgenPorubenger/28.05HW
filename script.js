@@ -64,7 +64,7 @@
 // red.addEventListener("click", function() {
 //     console.log("red");
 // })
-<<<<<<< HEAD
+
 // let p = document.querySelector('p');
 // p.addEventListener("click", function() {
 //     console.log("P");
@@ -84,50 +84,49 @@
 // });
 
 
-
-var Person = function(name) {
-    this.name = name;
-    this.canTalk = true;
-    this.greet = function() {
-        if (this.canTalk) {
-            console.log('Привет, я ' + this.name);
-        }
-    };
-};
-
-var Employee = function(name, title) {
-    this.name = name;
-    this.title = title;
-    this.greet = function() {
-        if (this.canTalk) {
-            console.log('Привет, я ' + this.name + ', ' + this.title);
-        }
-    };
-};
-Employee.prototype = new Person();
-
-var Customer = function(name) {
-    this.name = name;
-};
-Customer.prototype = new Person();
-
-var Mime = function(name) {
-    this.name = name;
-    this.canTalk = false;
-};
-Mime.prototype = new Person();
-
-var bob = new Employee('Боб', 'Строитель');
-var joe = new Customer('Джо');
-var rg = new Employee('Ред Грин', 'Разнорабочий');
-var mike = new Customer('Майк');
-var mime = new Mime('Мим');
-bob.greet();
-joe.greet();
-rg.greet();
-mike.greet();
-mime.greet();
-=======
+//
+// var Person = function(name) {
+//     this.name = name;
+//     this.canTalk = true;
+//     this.greet = function() {
+//         if (this.canTalk) {
+//             console.log('Привет, я ' + this.name);
+//         }
+//     };
+// };
+//
+// var Employee = function(name, title) {
+//     this.name = name;
+//     this.title = title;
+//     this.greet = function() {
+//         if (this.canTalk) {
+//             console.log('Привет, я ' + this.name + ', ' + this.title);
+//         }
+//     };
+// };
+// Employee.prototype = new Person();
+//
+// var Customer = function(name) {
+//     this.name = name;
+// };
+// Customer.prototype = new Person();
+//
+// var Mime = function(name) {
+//     this.name = name;
+//     this.canTalk = false;
+// };
+// Mime.prototype = new Person();
+//
+// var bob = new Employee('Боб', 'Строитель');
+// var joe = new Customer('Джо');
+// var rg = new Employee('Ред Грин', 'Разнорабочий');
+// var mike = new Customer('Майк');
+// var mime = new Mime('Мим');
+// bob.greet();
+// joe.greet();
+// rg.greet();
+// mike.greet();
+// mime.greet();
 
 // let main = document.getElementById('main');
 // main.addEventListener("click", function() {
@@ -267,24 +266,75 @@ mime.greet();
 // }, 5000);
 
 
-let first = document.querySelector('#first');
+// let first = document.querySelector('#first');
 
 
-<<<<<<< HEAD
-let point = document.querySelector('#point');
-point.addEventListener("mousedown", function () {
-   if (event.which === 1) {
-       let rect = point.getBoundingClientRect();
-       let X = first.event.offsetX;
-       let Y = first.event.offsetY;
-       console.log(X);
-       console.log(Y);
-       // rect.top.x==X;
-       // rect.top.y==Y;
 
-       // console.log(X);
-    }
+        let point = document.querySelector('#point');
+        point.addEventListener("mousedown", function () {
+                function moveAt() {
+                    let X = event.offsetX;
+                    let Y = event.offsetY;
+                    point.style.left = X + 'px';
+                    point.style.top = Y + 'px';
+                }
+                document.onmousemove = function() {
+                moveAt();
+                };
 
+            });
+        point.addEventListener("mouseup", function () {
+            document.onmousemove = null;
+            point.onmouseup = null;
+        });
+
+
+        // let maIn = document.querySelector('#main');
+        // maIn.addEventListener("mousemove", function () {
+        //     let X = event.offsetX;
+        //     let Y = event.offsetY;
+        //     console.log(X,Y);
+        //     let rect = point.getBoundingClientRect();
+        //
+        //     point.addEventListener("mouseup", function () {
+        //         if (event.which === 1) {
+        //             point.style.top=0+'px';
+        //             point.style.left=0+'px';
+        //
+        //
+        //         }
+        //     })
+        // })
+
+//==================
+
+
+
+
+
+
+
+
+// function mMove(a) {
+//     let boDy = document.querySelector('#main');
+//     boDy.addEventListener("mousemove", function () {
+//         if (a) {
+//         let X = event.offsetX;
+//         let Y = event.offsetY;
+//         console.log(X,Y);
+//         }
+//     })
+// }
+
+
+// point.addEventListener("onmouseup", function () {
+//         if (event.which === 1) {
+//             mMove(false);
+//         let rect = point.getBoundingClientRect();
+//
+//         }
+// }
+// )
     // if (Y > 5 && Y < 195) {
     //     if (X > 5 && X < 195) {
     //         point.style.top = Y + 'px';
@@ -293,10 +343,6 @@ point.addEventListener("mousedown", function () {
     //         point2.style.right = X + 'px';
     //     }
     // }
-});
-point.addEventListener("mouseup", function () {
-    if (event.which === 1) {}
-})
-=======
->>>>>>> fa61191f1b7789340f47adb3ca5ce7c773ce711f
->>>>>>> a7675b2efc27da91b9485ea03d9d9ff4f8e68743
+// });
+// point.addEventListener("mouseup", function () {
+//     if (event.which === 1) {}

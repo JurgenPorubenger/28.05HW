@@ -1,14 +1,16 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+#point {
+  width: 30px;
+  height: 30px;
+  background-color: brown;
+  position: absolute; }
+
 #main {
-  display: flex;
-  flex-direction: row; }
-  #main #first {
-    width: 200px;
-    height: 200px;
-    background-color: antiquewhite; }
-  #main #point {
-    width: 30px;
-    height: 30px;
-    background-color: brown;
-    position: absolute; }
+  position: relative;
+  width: 100vw;
+  height: 100vh; }
 
 /*# sourceMappingURL=style.css.map */
