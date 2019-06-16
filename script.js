@@ -270,23 +270,112 @@
 
 
 
-        let point = document.querySelector('#point');
-        point.addEventListener("mousedown", function () {
-                function moveAt() {
-                    let X = event.offsetX;
-                    let Y = event.offsetY;
-                    point.style.left = X + 'px';
-                    point.style.top = Y + 'px';
-                }
-                document.onmousemove = function() {
-                moveAt();
-                };
+        // let point = document.querySelector('#point');
+        // let main = document.querySelector('#main');
+        // point.addEventListener("mousedown", function () {
+        //         function moveAt() {
+        //             let X = event.offsetX;
+        //             console.log(X);
+        //             let Y = event.offsetY;
+        //             point.style.left = X + 'px';
+        //             point.style.top = Y + 'px';
+        //         }
+        //         main.onmousemove = function() {
+        //         moveAt();
+        //         };
 
-            });
+        //     });
+        // point.removeEventListener("mousedown", function () {
+        //     point.style.left = X + 'px';
+        //     point.style.top = Y + 'px';
+        // });
+
+
+        let point = document.querySelector('#point');
+        let main = document.querySelector('#main');
+        let body = document.querySelector('body');
+        // body.addEventListener("mousemove", function() {
+        //     let D = event.clientX;
+        //     let G = event.clientY;
+        //     csc(D,G)
+        // })
+        // function csc (a,p) {
+        //     point.style.left = a-point.offsetWidth/2 + p;
+        //     point.style.top = a-point.offsetWidth/2 + p;
+        // }
+        function drop() {
+            let start = Date.now();
+            console.log(Date.now);
+        }
+        drop();
+        point.addEventListener("mousedown", baba);
+        function baba () {
+            main.addEventListener("mousemove", dada ) 
+        }
+        function dada () {
+            let X = event.clientX;
+            let Y = event.clientY;
+            // console.log(X,Y)
+            if (Y>15&&Y<585) {
+                if (X>15&&X<585) {
+                    point.style.left = X-point.offsetWidth/2 + 'px';
+                    point.style.top = Y-point.offsetWidth/2 + 'px';
+                } {}
+            } 
+        }   
+         
         point.addEventListener("mouseup", function () {
-            document.onmousemove = null;
-            point.onmouseup = null;
-        });
+            main.removeEventListener("mousemove" ,dada)
+        })
+        body.addEventListener("mouseup", function () {
+            main.removeEventListener("mousemove" ,dada)
+        })
+    //=========================================
+
+
+
+
+
+
+        //var start = Date.now(); // сохранить время начала
+
+//var timer = setInterval(function() {
+  // вычислить сколько времени прошло с начала анимации
+  //var timePassed = Date.now() - start;
+
+  //if (timePassed >= 2000) {
+  //  clearInterval(timer); // конец через 2 секунды
+  //  return;
+ // }
+
+  // рисует состояние анимации, соответствующее времени timePassed
+  //draw(timePassed);
+
+//}, 20);
+
+// в то время как timePassed идёт от 0 до 2000
+// left принимает значения от 0 до 400px
+//function draw(timePassed) {
+ // train.style.left = timePassed / 5 + 'px';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // point.addEventListener("mouseup", function () {
+        //     point.style.left = X + 'px';
+        //     point.style.top = Y + 'px';
+        // });
 
 
         // let maIn = document.querySelector('#main');
@@ -306,43 +395,7 @@
         //     })
         // })
 
-//==================
 
 
 
 
-
-
-
-
-// function mMove(a) {
-//     let boDy = document.querySelector('#main');
-//     boDy.addEventListener("mousemove", function () {
-//         if (a) {
-//         let X = event.offsetX;
-//         let Y = event.offsetY;
-//         console.log(X,Y);
-//         }
-//     })
-// }
-
-
-// point.addEventListener("onmouseup", function () {
-//         if (event.which === 1) {
-//             mMove(false);
-//         let rect = point.getBoundingClientRect();
-//
-//         }
-// }
-// )
-    // if (Y > 5 && Y < 195) {
-    //     if (X > 5 && X < 195) {
-    //         point.style.top = Y + 'px';
-    //         point.style.left = X + 'px';
-    //         point2.style.bottom = Y + 'px';
-    //         point2.style.right = X + 'px';
-    //     }
-    // }
-// });
-// point.addEventListener("mouseup", function () {
-//     if (event.which === 1) {}
